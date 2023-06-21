@@ -24,14 +24,16 @@ CSS Index
 20. keyframes
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,700&family=Tilt+Prism&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+
 
 
 /* ==============================================================
                     1.Theme default css 
 =================================================================*/
-body {
-    font-family: 'Khula', sans-serif;
+body {    
+    font-family: 'PT Serif', serif;
     font-weight: normal;
     font-style: normal;
     font-size: 15px;
@@ -101,8 +103,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-    font-family: 'Khula', sans-serif;
+h6 {    
+    font-family: 'Ubuntu', sans-serif;
     font-weight: normal;
     color: #373737;
     margin-top: 0px;
@@ -122,6 +124,7 @@ h6 a {
 h1 {
     font-size: 67px;
     font-weight: 600;
+    font-family: 'Tilt Prism', cursive;
 }
 
 h2 {
@@ -293,6 +296,7 @@ label {
 	color: #fff;
 	font-weight: 500;
 	text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 
@@ -314,4 +318,10 @@ label {
     overflow: hidden;
     margin: auto;
     box-shadow: 0 0px 35px -8px rgba(28, 30, 35, 0.4) !important;
+}
+.owner-info h1 {
+    font-size: 70px;
+    color: #fff;
+    margin: 0;
+    margin-top: 15px;
 }
