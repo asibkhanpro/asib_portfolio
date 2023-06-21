@@ -11,15 +11,26 @@
 
 /* MD Device :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
-    
 
+    .main-menu{
+        display: none;
+    }
+    .responsive {
+        display: block;
+    }
+      
 }
 
 
 /* small mobile (XS) :320px. */
 @media (max-width: 767px) {
 
-
+    .main-menu{
+        display: none;
+    }
+    .responsive {
+        display: block;
+    }
     
 }
 
