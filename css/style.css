@@ -1,0 +1,317 @@
+/* 
+============================================================
+CSS Index
+============================================================
+1. Theme default css
+2. Top Nav bar
+3. Header Nav bar
+4. Services
+5. About
+6. Portfolio
+7. Counter
+8. Team
+9. Pricing
+10. Testimonail
+11. Blog
+12. Contact
+13. Footer
+14. ScrollUp 
+15. Inner page bannar 
+16. Index02 hero 
+17. Index04 hero particles 
+18. Index05 hero left-text
+19. Index05 hero left-text 
+20. keyframes
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&display=swap');
+
+
+/* ==============================================================
+                    1.Theme default css 
+=================================================================*/
+body {
+    font-family: 'Khula', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 15px;
+    color: #999;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    transition: all 0.3s ease-out 0s;
+}
+
+.f-left {
+    float: left
+}
+
+.f-right {
+    float: right
+}
+
+.fix {
+    overflow: hidden
+}
+
+a,
+.button {
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+a:focus,
+.button:focus {
+    text-decoration: none;
+    outline: none ;
+}
+a{
+    text-decoration: none;
+}
+a,
+button {
+    color: #317ff2;
+    outline: none;
+    font-size: 20px;
+}
+button:focus,
+input:focus,
+input:focus,
+textarea,
+textarea:focus {
+    outline: 0
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Khula', sans-serif;
+    font-weight: normal;
+    color: #373737;
+    margin-top: 0px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    color: #212058;
+}
+
+h1 {
+    font-size: 67px;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 38px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 32px;
+    font-weight: 300;
+}
+
+h4 {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 14px;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    list-style: none
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+p {
+    line-height: 32px;
+}
+
+hr {
+    border-bottom: 1px solid #eceff8;
+    border-top: 0 none;
+    margin: 30px 0;
+    padding: 0;
+}
+
+label {
+    color: #7e7e7e;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+*::-moz-selection {
+    background: #d6b161;
+    color: #fff;
+    text-shadow: none;
+}
+
+::-moz-selection {
+    background: #444;
+    color: #fff;
+    text-shadow: none;
+}
+
+::selection {
+    background: #444;
+    color: #fff;
+    text-shadow: none;
+}
+
+*::-moz-placeholder {
+    color: #ffffff;
+    font-size: 20px;
+    opacity: 1;
+}
+
+*::placeholder {
+    color: #333;
+    font-size: 14px;
+    opacity: 1;
+}
+
+.theme-overlay {
+    position: relative
+}
+
+.theme-overlay::before {
+    background-color: rgb(115, 108, 236);
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.separator {
+    border-top: 1px solid #f2f2f2
+}
+
+/* button style */
+.btn {
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-bottom: 0;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    vertical-align: middle;
+    white-space: nowrap;
+    padding: 15px 30px;
+    z-index: 244;
+    border-radius: 5px;
+    background-color: #258afc;
+}
+
+.btn:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* scrollUp */
+#scrollUp {
+    background: #0c7ac6;
+    height: 35px;
+    width: 35px;
+    right: 50px;
+    bottom: 77px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 34px;
+}
+
+#scrollUp:hover {
+    background: #fff;
+    color: #0c7ac6;
+}
+.container {
+	max-width: 1480px;
+}
+/*====================================================
+                Header Nav bar
+======================================================*/
+.header-area {
+    position: absolute;
+    width: 100%;
+    padding-top: 20px;
+}
+.main-menu{
+    margin-top: 15px;
+}
+.main-menu ul li {
+	display: inline-block;
+	margin: 0px 60px 0px 0px;
+}
+.main-menu ul li a {
+	text-decoration: none;
+	font-size: 15px;
+	color: #fff;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+
+
+
+
+
+/*===================== hero================= */
+.hero-area {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.owner-img {
+    width: 15%;
+    height: 15%;
+    border: 6px solid #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+    box-shadow: 0 0px 35px -8px rgba(28, 30, 35, 0.4) !important;
+}
