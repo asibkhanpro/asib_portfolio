@@ -10,7 +10,22 @@
         $(this).css("background-image", "url(" + $(this).attr("data-background") + ")")
     })
 
+    	// TYPE JS
+	var typed = new Typed('.header_typing', {
+		strings: ["Freelancer.", "Web Designer."],
+		typeSpeed: 40,
+		backSpeed: 40,
+		loop: true,
+		showCursor: false,
+		backDelay: 2000,
+		startDelay: 1000,
+
+	});
+    $('.dh-container').directionalHover({	
+		speed: 300
+	});	
     
+
     //how-to-oder-area
     $('.slider-hero').owlCarousel({
         items:1,
