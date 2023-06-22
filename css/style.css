@@ -276,13 +276,12 @@ label {
 .container {
 	max-width: 1480px;
 }
-/*====================================================
-                Header Nav bar
-======================================================*/
 
+default 
 
+/*==================== default css end ================ */
 
-/*====================== Header area start ========================*/
+/*==================== header area start ================ */
 header {
 	position: fixed;
 	top: 0;
@@ -309,16 +308,14 @@ header {
     font-family: 'releway', sans-serif;
     display: block;
 }
-  
-  
-/*sticky*/
+/*==================== header menu end ================ */
+/*==================== sticky menu start ================ */
 header.sticky {
     animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
     box-shadow: 0 0.8rem 2rem 0 rgba(0, 0, 0, 0.1);
 }
-  
-  
-/*Hamburger menu*/
+/*==================== sticky menu end ================ */
+/*==================== Hamburger menu start================ */
 .hamburger-menu {
     cursor: pointer;
     position: relative;
@@ -369,8 +366,6 @@ header.sticky {
     -ms-transform: translateY(-400%) rotate(-135deg);
     transform: translateY(-400%) rotate(-135deg);
 }
-  
-/*ofcanvas menu*/
 .responsive-menu {
     position: fixed;
     width: 100%;
@@ -407,10 +402,8 @@ header.sticky {
     line-height: 1.12;
     color: #ffffff;
 }
-  
-
-  
-/*========== Page loader CSS ==========*/
+/*==================== Hamburger menu end================ */
+/*==================== preloder area start================ */
 #preloader {
     position: fixed;
     background: #fff;
@@ -470,27 +463,9 @@ header.sticky {
       opacity: 0;
     }
 }
-/*========== Page Footer CSS ==========*/
-
-
-
-
-
-  .scroll_about_btn i {
-    -webkit-animation: bounce 2s 2s linear infinite alternate;
-    animation: bounce 2s 2s linear infinite alternate;
-  }
-  .scroll_about_btn {
-    width: 100px;
-    height: 100px;
-    display: inline-block;
-    margin: 50px;
-  }
-  
-  
-
-
-/*===================== hero================= */
+/*==================== preloder area end================ */
+/*==================== header area end================ */
+/*===================== hero area start================= */
 .hero-area {
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -538,6 +513,17 @@ header.sticky {
 	left: 50%;
 }
 
+.scroll_about_btn i {
+    -webkit-animation: bounce 2s 2s linear infinite alternate;
+    animation: bounce 2s 2s linear infinite alternate;
+}
+.scroll_about_btn {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin: 50px;
+}
+/*==================== hero area end================ */
 
 
 
@@ -643,6 +629,7 @@ header.sticky {
 	border-radius: 50px;
 }
 
+/*==================== about area end================ */
 
 
 
@@ -650,7 +637,7 @@ header.sticky {
 
 
 
-/*==================== skill area================ */
+/*==================== skill area start ================ */
 .skill-dis h3 {
 	font-weight: 700;
 	letter-spacing: 2px;
@@ -771,3 +758,10 @@ header.sticky {
   .sass:after{
       border-top-color:#a487b2;
   }
+/*==================== skill area end================ */
+
+
+
+
+
+

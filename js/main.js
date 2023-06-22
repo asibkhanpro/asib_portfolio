@@ -2,7 +2,7 @@
         "use strict";
     
     
-        // ==============Sikll-start============
+        // ========================================== skill start ==========================================
         var skills = {
             ht: 90,
             cs: 80,
@@ -25,9 +25,8 @@
               }
             );
         }); 
-        // ==============Sikll-end============
-
-        // ==============typed-start============
+        // ========================================== skill end ==========================================
+        // ========================================== typed start ==========================================
         var typed = new Typed('.header_typing', {
             strings: ["Freelancer.", "Web Designer."],
             typeSpeed: 40,
@@ -49,42 +48,36 @@
             startDelay: 1000,
 
         });
-        // ==============Sikll-end============
-        // ============== Hamburger-menu-start============
+        // ========================================== typed end ==========================================
+        // ========================================== Hamburger-menu start ==========================================
         $('.hamburger-menu').on('click', function () {
             $('.hamburger-menu .line-top, .responsive-menu').toggleClass('current');
             $('.hamburger-menu .line-center').toggleClass('current');
             $('.hamburger-menu .line-bottom').toggleClass('current');
         });
-        // ============== Hamburger-menu-end============
+        // ========================================== Hamburger-menu end ==========================================
+        // ========================================== preloader start ==========================================
         $(window).on('load', function(){
-            // Prealoder
             $("#preloader").delay(500).fadeOut("slow");
-    
-            // Isotope Initialize
-            function isotopeInit() {
-                $('.project_items').isotope({
-                    itemSelector: '.item',
-                    masonry: {
-                        columnWidth: '.item'
-                    }
-                });
-                $('.project_filter_menu ul li').on('click', function () {
-                    $('.project_filter_menu ul li').removeClass('active');
-                    $(this).addClass('active');
-                    var selector = $(this).attr('data-filter');
-                    $('.project_items').isotope({
-                        filter: selector
-                    });
-                    return false;
-                });
-            }
-            isotopeInit();
+
         });
-    
+        // ========================================== preloader end ==========================================
+        // ========================================== portfolio start ==========================================
+        var $grid = $('.portfolio-active').isotope({
+            itemSelector: '.grid-item',
+            percentPosition: true,
+            masonry: {
+              columnWidth: 1
+            }
+        })
+        // filter items on button click
+        $('.portfolio-menu').on( 'click', 'button', function() {
+            var filterValue = $(this).attr('data-filter');
+            $grid.isotope({ filter: filterValue });
+        });
+        // ========================================== portfolio end ==========================================
+        // ========================================== sticky start ==========================================
         $(document).ready(function () {
-    
-            // sticky header
             function sticky_header(){
                 var wind = $(window);
                 var sticky = $('header');
@@ -99,20 +92,22 @@
             }
             sticky_header();
         });
-
+        // ========================================== sticky end ==========================================
+        // ========================================== scrollUp strat ==========================================
         $.scrollUp({
-            scrollName: 'scrollUp', // Element ID
-            topDistance: '300', // Distance from top before showing element (px)
-            topSpeed: 300, // Speed back to top (ms)
-            animation: 'fade', // Fade, slide, none
-            animationInSpeed: 200, // Animation in speed (ms)
-            animationOutSpeed: 200, // Animation out speed (ms)
-            scrollText: '<i class="fas-sharp fa-solid fa-arrow-up-from-bracket"></i>', // Text for element
-            activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+            scrollName: 'scrollUp',
+            topDistance: '300',
+            topSpeed: 300,
+            animation: 'fade',
+            animationInSpeed: 200,
+            animationOutSpeed: 200,
+            scrollText: '<i class="fas-sharp fa-solid fa-arrow-up-from-bracket"></i>',
+            activeOverlay: false,
         });
-
+        // ========================================== scrollUp end ==========================================
+        // ========================================== wow strat ==========================================
         // WOW active
         new WOW().init();
-
+        // ========================================== wow end ==========================================
 
 })(jQuery);
