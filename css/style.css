@@ -623,7 +623,6 @@ header.sticky {
 	background: #344;
 	color: #fff;
 	border-radius: 5px;
-	line-height: 1;
 	width: 40px;
 	height: 40px;
 	display: inline-block;
@@ -643,3 +642,132 @@ header.sticky {
 	background: red;
 	border-radius: 50px;
 }
+
+
+
+
+
+
+
+
+/*==================== skill area================ */
+.skill-dis h3 {
+	font-weight: 700;
+	letter-spacing: 2px;
+	margin-bottom: 20px;
+}
+.skill-dis span {
+	margin-bottom: 30px;
+	display: inline-block;
+	color: red;
+	font-weight: 700;
+}
+.skill-dis p {
+	color: #444;
+	margin-bottom: 67px;
+}
+  .progressBar {
+      margin-bottom: 26px;
+      margin-bottom: 1.66em;
+      position: relative;
+      
+  }
+  .progressBar h4 {
+      font-size: 16px;
+      text-transform: none;
+      margin-bottom: 7px;
+      margin-bottom: .33em;
+      color: #2E1437;
+  }
+  .progressBarcontainer {
+      width: 100%;
+      height: 10px;
+      background: #E1E1E1!important;
+      overflow: hidden;
+      border-radius: 0.3em;
+  }
+  .progressBarValue {
+      height: 10px;
+      float: left;
+      border-radius: 0.3em;
+      background: #e55d87; /* Old browsers */
+      background: -moz-linear-gradient(-45deg, #e55d87 0%, #5fc3e4 100%);
+      background: -webkit-linear-gradient(-45deg, #e55d87 0%, #5fc3e4 100%);
+      background: linear-gradient(135deg, #e55d87 0%, #5fc3e4 100%);
+  }
+  
+  .speech-bubble {
+      font-size: 0.75em;
+      line-height: 2em;
+      position: absolute;
+      top: -0.60em;
+      text-align: center;
+      min-width: 3em;
+      border-radius: 0.3em;
+      color: white;
+      display: none;
+  }
+  
+  .speech-bubble:after {
+      border: 0.5em solid transparent;
+      content: "";
+      margin-left: -0.5em;
+      position: absolute;
+      bottom: -50%;
+      left: 50%;
+  }
+  
+  .html {
+      left: calc(88.5% - 1.5em);
+  }
+    
+  .css{
+        left: calc(78.5% - 1.5em);
+  }
+  .bootstrap{
+        left: calc(93.5% - 1.5em);
+  }
+  
+  .javascript{
+      left: calc(38.5% - 1.5em);
+  } 
+  
+  .jquery{
+      left: calc(58.5% - 1.5em);
+  }
+  .sass{
+      left: calc(18.5% - 1.5em);
+  }
+  
+  .html,
+  .css,
+  .bootstrap,
+  .javascript,
+  .react,
+  .sass,
+  .jquery {
+      background: #a487b2;
+  }
+    
+  .html:after {
+      border-top-color: #a487b2;
+  }
+  
+  .css:after{
+      border-top-color:#a487b2;
+  }
+  
+  .bootstrap:after{
+      border-top-color:#a487b2;
+  }
+  
+  .javascript:after{
+      border-top-color:#a487b2;
+  }
+  
+  .jquery:after{
+      border-top-color:#a487b2;
+  }
+  .sass:after{
+      border-top-color:#a487b2;
+  }

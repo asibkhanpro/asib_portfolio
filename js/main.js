@@ -3,6 +3,29 @@
         "use strict";
     
     
+
+        var skills = {
+            ht: 90,
+            cs: 80,
+            bo: 95,
+            js: 40,
+            jq: 60,
+            sa: 20
+          };
+          
+          $.each(skills, function(key, value) {
+            var skillbar = $("." + key);
+          
+            skillbar.animate(
+              {
+                width: value + "%"
+              },
+              3000,
+              function() {
+                $(".speech-bubble").fadeIn();
+              }
+            );
+          }); 
     })(jQuery);
     var typed = new Typed('.header_typing', {
 		strings: ["Freelancer.", "Web Designer."],
