@@ -1,9 +1,8 @@
 (function ($) {
-    (function ($) {
         "use strict";
     
     
-
+        // ==============Sikll-start============
         var skills = {
             ht: 90,
             cs: 80,
@@ -25,36 +24,39 @@
                 $(".speech-bubble").fadeIn();
               }
             );
-          }); 
-    })(jQuery);
-    var typed = new Typed('.header_typing', {
-		strings: ["Freelancer.", "Web Designer."],
-		typeSpeed: 40,
-		backSpeed: 40,
-		loop: true,
-		showCursor: false,
-		backDelay: 2000,
-		startDelay: 1000,
+        }); 
+        // ==============Sikll-end============
 
-	});
-    
-	var typed = new Typed('.about_typing', {
-		strings: ["Freelancer.", "Web Designer."],
-		typeSpeed: 40,
-		backSpeed: 40,
-		loop: true,
-		showCursor: false,
-		backDelay: 2000,
-		startDelay: 1000,
+        // ==============typed-start============
+        var typed = new Typed('.header_typing', {
+            strings: ["Freelancer.", "Web Designer."],
+            typeSpeed: 40,
+            backSpeed: 40,
+            loop: true,
+            showCursor: false,
+            backDelay: 2000,
+            startDelay: 1000,
 
-	});
+        });
     
-        // Hamburger-menu
+        var typed = new Typed('.about_typing', {
+            strings: ["Freelancer.", "Web Designer."],
+            typeSpeed: 40,
+            backSpeed: 40,
+            loop: true,
+            showCursor: false,
+            backDelay: 2000,
+            startDelay: 1000,
+
+        });
+        // ==============Sikll-end============
+        // ============== Hamburger-menu-start============
         $('.hamburger-menu').on('click', function () {
             $('.hamburger-menu .line-top, .responsive-menu').toggleClass('current');
             $('.hamburger-menu .line-center').toggleClass('current');
             $('.hamburger-menu .line-bottom').toggleClass('current');
         });
+        // ============== Hamburger-menu-end============
         $(window).on('load', function(){
             // Prealoder
             $("#preloader").delay(500).fadeOut("slow");
@@ -96,46 +98,21 @@
                 });
             }
             sticky_header();
-    
-            // Client Slider Initialize
-            $('.hero_text_slider').owlCarousel({
-                loop: true,
-                margin: 20,
-                items: 1,
-                autoplay: true,
-                autoplayTimeout: 10000,
-                autoplayHoverPause: true,
-                nav: false,
-                dots: true,
-                responsive: {
-                    0: {
-                        items: 1
-                    }
-                }
-            });
-    
-            
-        });
-    
-        // all video controller none
-        document.ready(function(){        
-            $('video').prop('controls', false);
         });
 
-    $.scrollUp({
-        scrollName: 'scrollUp', // Element ID
-        topDistance: '300', // Distance from top before showing element (px)
-        topSpeed: 300, // Speed back to top (ms)
-        animation: 'fade', // Fade, slide, none
-        animationInSpeed: 200, // Animation in speed (ms)
-        animationOutSpeed: 200, // Animation out speed (ms)
-        scrollText: '<i class="fas fa-arrow-up"></i>', // Text for element
-        activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
-    });
+        $.scrollUp({
+            scrollName: 'scrollUp', // Element ID
+            topDistance: '300', // Distance from top before showing element (px)
+            topSpeed: 300, // Speed back to top (ms)
+            animation: 'fade', // Fade, slide, none
+            animationInSpeed: 200, // Animation in speed (ms)
+            animationOutSpeed: 200, // Animation out speed (ms)
+            scrollText: '<i class="fas-sharp fa-solid fa-arrow-up-from-bracket"></i>', // Text for element
+            activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+        });
 
-    
-    // WOW active
-    new WOW().init();
+        // WOW active
+        new WOW().init();
 
 
 })(jQuery);
