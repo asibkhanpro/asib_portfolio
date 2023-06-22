@@ -15,6 +15,17 @@
 
 	});
     
+	var typed = new Typed('.about_typing', {
+		strings: ["Freelancer.", "Web Designer."],
+		typeSpeed: 40,
+		backSpeed: 40,
+		loop: true,
+		showCursor: false,
+		backDelay: 2000,
+		startDelay: 1000,
+
+	});
+    
         // Hamburger-menu
         $('.hamburger-menu').on('click', function () {
             $('.hamburger-menu .line-top, .responsive-menu').toggleClass('current');
