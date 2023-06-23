@@ -758,7 +758,7 @@ header.sticky {
 /*==================== skill area end================ */
 
 .protfolio-area {
-	background: #21d09f;
+	background: linear-gradient(99.38deg, #ff0ad9 -0.7%, #000 87.79%);
 }
 .portfolio-menu button {
 	color: #fff;
@@ -768,7 +768,11 @@ header.sticky {
 	text-align: center;
 	margin: 0 10px;
 }
-
+.list-inline-item a {
+	background: linear-gradient(99.38deg, #26beee -0.7%, #a657e4 87.79%);
+	padding: 10px 15px;
+	color: #fff;
+}
 .portfolio {
     overflow: hidden;
     -webkit-box-shadow: 0px 0px 35px -8px rgba(28, 30, 35, 0.4);
@@ -778,6 +782,10 @@ header.sticky {
     -webkit-transition: all .4s ease;
     -o-transition: all .4s ease;
     transition: all .4s ease;
+}
+.overlay-text {
+	text-align: center;
+	line-height: 11;
 }
 .overlay {
     position: absolute;
