@@ -2,6 +2,22 @@
         "use strict";
     
     
+        $(document).ready(function () {
+            function sticky_header(){
+                var wind = $(window);
+                var sticky = $('header');
+                wind.on('scroll', function () {
+                    var scroll = wind.scrollTop();
+                    if (scroll < 100) {
+                        sticky.removeClass('sticky');
+                    } else {
+                        sticky.addClass('sticky');
+                    }
+                });
+            }
+            sticky_header();
+        });
+        
         // ========================================== skill start ==========================================
         var skills = {
             ht: 90,
@@ -77,21 +93,8 @@
         });
         // ========================================== portfolio end ==========================================
         // ========================================== sticky start ==========================================
-        $(document).ready(function () {
-            function sticky_header(){
-                var wind = $(window);
-                var sticky = $('header');
-                wind.on('scroll', function () {
-                    var scroll = wind.scrollTop();
-                    if (scroll < 100) {
-                        sticky.removeClass('sticky');
-                    } else {
-                        sticky.addClass('sticky');
-                    }
-                });
-            }
-            sticky_header();
-        });
+        	// FANCY BOX
+
         // ========================================== sticky end ==========================================
         // ========================================== scrollUp strat ==========================================
         $.scrollUp({
@@ -109,5 +112,20 @@
         // WOW active
         new WOW().init();
         // ========================================== wow end ==========================================
+
+        
+        // FORM VALIDATION
+        $('.dh-container').directionalHover({	
+            speed: 300
+        });	
+        $('[data-fancybox="gallery"]').fancybox({
+            buttons: [
+                "zoom",
+                "slideShow",
+                "fullScreen",
+                "thumbs",
+                "close"
+            ]
+        });
 
 })(jQuery);

@@ -16,7 +16,8 @@
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/meanmenu.css">
     <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/icofont.min.css">
+    <link rel="stylesheet" href="css/icofont.min.css"> 
+    <link rel="stylesheet" href="css/fancebox.css"> 
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/material-design-iconic-font.min.css">
@@ -61,7 +62,7 @@
                                     <li><a href="#">Home</a></li>
                                     <li><a href="#about">About</a></li>
                                     <li><a href="#skill">Skill</a></li>
-                                    <li><a href="#">Portfolio</a></li>
+                                    <li><a href="#protfolio">Portfolio</a></li>
                                     <li><a href="#">Testimonial</a></li>
                                     <li><a href="#">Contact</a></li>
                                     <li><a href="#">Footer</a></li>
@@ -76,7 +77,7 @@
                                 <li><a href="#">Home</a></li>
                                 <li><a href="#about">About</a></li>
                                 <li><a href="#skill">Skill</a></li>
-                                <li><a href="#">Portfolio</a></li>
+                                <li><a href="#protfolio">Portfolio</a></li>
                                 <li><a href="#">Testimonial</a></li>
                                 <li><a href="#">Contact</a></li>
                                 <li><a href="#">Footer</a></li>
@@ -210,7 +211,7 @@
                         <div class="progressBar">
                             <h4>BOOTSTRAP</h4>
                             <div class="progressBarcontainer">
-                                <div class="speech-bubble bootstrap">95%</div>
+                                <div class="speech-bubble Bootstrap">95%</div>
                                 <div class="progressBarValue bo"></div>
                             </div>
                         </div>
@@ -243,51 +244,133 @@
     </div>
     <!--============== skill area end ===============-->
 
-    <div class="protfolio-area">
+    <div class="protfolio-area pt-100 pb-100" id="protfolio">
         <div class="container">
             <div class="row">
-                <div class="portfolio-menu">
+                <div class="portfolio-menu text-center mb-20">
                     <button data-filter="*">Show All</button>
-                    <button data-filter=".non-bootstrap">Non-Bootstrap</button>
-                    <button data-filter=".Bootstrap">Bootstrap</button>
+                    <button data-filter=".boot">bootstrap</button>
+                    <button data-filter=".non-boot">Non-Bootstrap</button>
                     <button data-filter=".psd">Psd</button>
                     <button data-filter=".figma">Figma</button>
                 </div>                  
             </div>
             <div class="row portfolio-active">
-                <div class="col-lg-4 grid-item non-bootstrap">
-                    <div class="protfolio-single mb-30">
-                        <img src="img/portfolio/protfolio-non-bo.png" alt="">
+                <div class="col-lg-4 grid-item boot figma">
+                    <div class="protfolio-single  position-relative border dh-container mb-30">
+                        <img src="img/portfolio/boot/figma-3.png" alt="">
+                        <div class="overlay dh-overlay">
+                            <div class="overlay-text">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item mr-4"><a href="img/portfolio/boot/figma-3.png" data-fancybox="gallery"><i class="fas fa-plus"></i></a></li>
+                                    <li class="list-inline-item"><a href="https://saruarhosenn.github.io/PersistMe/" target="_blank"><i class="fas fa-link"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4 grid-item non-bootstrap">
-                    <div class="protfolio-single mb-30">
-                        <img src="img/portfolio/works-3.jpg" alt="">
+                <div class="col-lg-4 grid-item non-boot psd">
+                    <div class="protfolio-single  position-relative border dh-container mb-30">
+                        <img src="img/portfolio/non-boot/psd-2.png" alt="">
+                        <div class="overlay dh-overlay">
+                            <div class="overlay-text">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item mr-4"><a href="img/portfolio/non-boot/psd-2.png" data-fancybox="gallery"><i class="fas fa-plus"></i></a></li>
+                                    <li class="list-inline-item"><a href="https://saruarhosenn.github.io/PersistMe/" target="_blank"><i class="fas fa-link"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4 grid-item non-bootstrap">
-                    <div class="protfolio-single mb-30">
-                        <img src="img/portfolio/protfolio-non-bo-3.png" alt="">
+                <div class="col-lg-4 grid-item boot psd">
+                    <div class="protfolio-single  position-relative border dh-container mb-30">
+                        <img src="img/portfolio/boot/psd-2.png" alt="">
+                        <div class="overlay dh-overlay">
+                            <div class="overlay-text">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item mr-4"><a href="img/portfolio/boot/psd-2.png" data-fancybox="gallery"><i class="fas fa-plus"></i></a></li>
+                                    <li class="list-inline-item"><a href="https://saruarhosenn.github.io/PersistMe/" target="_blank"><i class="fas fa-link"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4 grid-item non-bootstrap">
-                    <div class="protfolio-single mb-30">
-                        <img src="img/portfolio/works-4.jpg" alt="">
+                <div class="col-lg-4 grid-item non-boot figma">
+                    <div class="protfolio-single position-relative border dh-container mb-30">
+                        <img src="img/portfolio/non-boot/figma-2.png" alt="">
+                        <div class="overlay dh-overlay">
+                            <div class="overlay-text">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item mr-4"><a href="img/portfolio/non-boot/figma-2.png" data-fancybox="gallery"><i class="fas fa-plus"></i></a></li>
+                                    <li class="list-inline-item"><a href="https://saruarhosenn.github.io/PersistMe/" target="_blank"><i class="fas fa-link"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4 grid-item Bootstrap">
-                    <div class="protfolio-single mb-30">
-                        <img src="img/portfolio/works-5.jpg" alt="">
+                <div class="col-lg-4 grid-item boot figma">
+                    <div class="protfolio-single position-relative border dh-container mb-30">
+                        <img src="img/portfolio/boot/figma-2.png" alt="">
+                        <div class="overlay dh-overlay">
+                            <div class="overlay-text">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item mr-4"><a href="images/portfolio/persistme1.png" data-fancybox="gallery"><i class="fas fa-plus"></i></a></li>
+                                    <li class="list-inline-item"><a href="https://saruarhosenn.github.io/PersistMe/" target="_blank"><i class="fas fa-link"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4 grid-item Bootstrap">
-                    <div class="protfolio-single mb-30">
-                        <img src="img/portfolio/protfolio-non-bo-2.png" alt="">
+                <div class="col-lg-4 grid-item non-boot psd">
+                    <div class="protfolio-single position-relative border dh-container mb-30">
+                        <img src="img/portfolio/non-boot/psd.jpg" alt="">
+                        <div class="overlay dh-overlay">
+                            <div class="overlay-text">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item mr-4"><a href="images/portfolio/persistme1.png" data-fancybox="gallery"><i class="fas fa-plus"></i></a></li>
+                                    <li class="list-inline-item"><a href="https://saruarhosenn.github.io/PersistMe/" target="_blank"><i class="fas fa-link"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4 grid-item Bootstrap">
-                    <div class="protfolio-single mb-30">
-                        <img src="img/portfolio/protfolio-non-bo-2.png" alt="">
+                <div class="col-lg-4 grid-item boot psd">
+                    <div class="protfolio-single position-relative border dh-container">
+                        <img src="img/portfolio/boot/psd.png" alt="">
+                        <div class="overlay dh-overlay">
+                            <div class="overlay-text">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item mr-4"><a href="images/portfolio/persistme1.png" data-fancybox="gallery"><i class="fas fa-plus"></i></a></li>
+                                    <li class="list-inline-item"><a href="https://saruarhosenn.github.io/PersistMe/" target="_blank"><i class="fas fa-link"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 grid-item boot psd">
+                    <div class="protfolio-single position-relative border dh-container">
+                        <img src="img/portfolio/boot/Psd-3.png" alt="">
+                        <div class="overlay dh-overlay">
+                            <div class="overlay-text">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item mr-4"><a href="images/portfolio/persistme1.png" data-fancybox="gallery"><i class="fas fa-plus"></i></a></li>
+                                    <li class="list-inline-item"><a href="https://saruarhosenn.github.io/PersistMe/" target="_blank"><i class="fas fa-link"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 grid-item boot figma">
+                    <div class="protfolio-single position-relative border dh-container ">
+                        <img src="img/portfolio/boot/figma.png" alt="">
+                        <div class="overlay dh-overlay">
+                            <div class="overlay-text">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item mr-4"><a href="images/portfolio/persistme1.png" data-fancybox="gallery"><i class="fas fa-plus"></i></a></li>
+                                    <li class="list-inline-item"><a href="https://saruarhosenn.github.io/PersistMe/" target="_blank"><i class="fas fa-link"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -310,6 +393,8 @@
     <script src="js/jquery.scrollUp.min.js"></script>
     <script src="js/animatedheadline.js"></script>
     <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/fancybox.js"></script>
+    <script src="js/hover-efect.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/waypoints.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
